@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>number Phone</title>
+</head>
+<body>
+<script>
+    function checkNumberPhone(str) {
+        var regexp = /^[0-9]{2}(\-[0]{1})[0-9]{9}$/;
+        if (regexp.test(str)) {
+            return true;
+        }return false;
+    }
+    var num = '84-0987654329';
+    console.log(checkNumberPhone(num));
+    var num = '56-94048364737483';
+    console.log(checkNumberPhone(num));
+</script>
+</body>
+</html>
